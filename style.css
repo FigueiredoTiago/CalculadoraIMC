@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lora', serif;
+ 
+}
+h1 {
+    font-weight: bold;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/pexels-ella-olsson-1640770.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+   
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: #85A63F;
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    outline: 0;
+}
+.input label {
+    font-weight: bolder;
+}
+button {
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    color:#F2B705;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+
+} 
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    background-color: #000;
+    color: rgb(255, 198, 0);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+.foter {
+    position: absolute;
+    bottom: 0;
+    background-color: #F2B705;
+    height: 25px;
+    width: 100vw;
+    text-align: center;
+    
+    
+   
+}
+@media (max-width: 600px) {
+    .content {
+        background: transparent;
+        height: 500px;
+        width: 350px;
+    }
+    h1 {
+        color: #F2B705;
+        text-shadow: 2px 1px 4px black;
+    }
+
+    .input input {
+        
+        border-radius:5px ;
+        height: 30px;
+        width: 180px;
+        background-color: black;
+        box-shadow: 0 0 10px black;
+        color: #F2B705;
+
+    }
+    label {
+        background-color:black;
+        color: #F2B705;
+        padding: 10px;
+        border-radius: 15px 30px;
+        box-shadow: 0 0 10px black;
+    }
+
+    .foter {
+        font-size:60%;
+    }
+
+}
